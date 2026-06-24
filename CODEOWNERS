@@ -1,0 +1,12 @@
+# CODEOWNERS for maccay-plugins
+# All changes require review from the repo owner.
+# marketplace.json and plugins/ changes always require owner sign-off.
+
+# Global fallback — owner reviews everything
+*                        @roypadina
+
+# marketplace.json always requires owner sign-off
+marketplace.json         @roypadina
+
+# Each plugin folder requires owner sign-off
+plugins/                 @roypadina

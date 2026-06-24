@@ -1,0 +1,69 @@
+{
+  "id": "maccay-official",
+  "name": "Maccay Official Plugins",
+  "version": "1",
+  "description": "First-party Maccay clipboard plugins.",
+  "maintainer": "roypadina",
+  "plugins": [
+    {
+      "id": "com.maccay.example-has-url",
+      "name": "Has URL",
+      "description": "True when the clipboard text contains an http or https URL.",
+      "version": "1.0.0",
+      "kind": "condition",
+      "capabilities": [],
+      "source": {
+        "type": "github",
+        "repo": "roypadina/maccay-plugins",
+        "ref": "main",
+        "path": "plugins/example-has-url"
+      },
+      "sha256": "3ad0327db2db23423c8cb9b24d65dcd227bd20d187d7ba68fac4b1f4934266d5"
+    },
+    {
+      "id": "com.maccay.example-shout",
+      "name": "Shout",
+      "description": "Uppercases the clipboard text and prepends SHOUT:.",
+      "version": "1.0.0",
+      "kind": "action",
+      "capabilities": [],
+      "source": {
+        "type": "github",
+        "repo": "roypadina/maccay-plugins",
+        "ref": "main",
+        "path": "plugins/example-shout"
+      },
+      "sha256": "dc5518605c763e44774f8b6da089589f6e044506c0a1d52ccdf42d6a8a8c0b81"
+    },
+    {
+      "id": "com.maccay.text-transforms",
+      "name": "Text transforms",
+      "description": "Everyday clipboard text transforms: trim, UPPERCASE, lowercase, strip formatting, and fix keyboard layout.",
+      "version": "1.0.0",
+      "kind": "action",
+      "capabilities": [],
+      "source": {
+        "type": "github",
+        "repo": "roypadina/maccay-plugins",
+        "ref": "main",
+        "path": "plugins/text-transforms"
+      },
+      "sha256": "ebb471bfc61370ff02e93a50dad4b672cd6f4e6ba0e58d75ba13123ad9863b67"
+    },
+    {
+      "id": "com.maccay.unwrap-terminal",
+      "name": "Unwrap terminal command",
+      "description": "Detects terminal-copied, soft-wrapped text and joins it back into one line.",
+      "version": "1.0.0",
+      "kind": "action",
+      "capabilities": [],
+      "source": {
+        "type": "github",
+        "repo": "roypadina/maccay-plugins",
+        "ref": "main",
+        "path": "plugins/unwrap-terminal"
+      },
+      "sha256": "21ebf1ee6c93b587e3839fd4b13722f888c4637fc5fdaa832f1dd7a1c52c4c16"
+    }
+  ]
+}
