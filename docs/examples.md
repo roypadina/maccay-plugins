@@ -21,7 +21,7 @@ This is the simplest possible JavaScript condition. The package has one provider
   "id": "com.maccay.example-has-url",
   "name": "Has URL",
   "version": "1.0.0",
-  "author": { "name": "Maccay" },
+  "author": { "name": "MaccyPlus" },
   "description": "True when the clipboard text contains an http or https URL.",
   "capabilities": [],
   "providers": [
@@ -59,7 +59,7 @@ The simplest declarative action. Uppercases the text and prepends `"SHOUT: "`.
   "id": "com.maccay.example-shout",
   "name": "Shout",
   "version": "1.0.0",
-  "author": { "name": "Maccay" },
+  "author": { "name": "MaccyPlus" },
   "description": "Uppercases the clipboard text and prepends SHOUT:.",
   "capabilities": [],
   "providers": [

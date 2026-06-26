@@ -18,7 +18,7 @@ The top-level object in `plugin.json` describes the **package** — the install 
 | `description` | string | yes | Non-empty. **Maximum 120 characters.** Shown as the package tooltip. |
 | `longHelp` | string | no | Extended description. Shown in the package detail view. No length limit. |
 | `author` | object | no | `{ "name": "...", "url": "..." }` — `url` is optional. |
-| `minAppVersion` | string | no | Minimum Maccay version required. If absent, any version is accepted. |
+| `minAppVersion` | string | no | Minimum MaccyPlus version required. If absent, any version is accepted. |
 | `capabilities` | array of strings | yes (use `[]` if none) | Declare every resource the package accesses. See [Capabilities](#capabilities) below. |
 | `providers` | array of ProviderSpec | yes | Must be non-empty. Each element describes one provider. |
 
@@ -58,7 +58,7 @@ Each element of the `providers` array describes one provider.
 | `description` | string | yes | Non-empty. **Maximum 120 characters.** |
 | `longHelp` | string | no | Extended description. No length limit. |
 | `kind` | string | yes | `"action"` or `"condition"`. |
-| `engine` | string | yes | `"declarative"` or `"javascript"`. Never `"native"` — that value is reserved for built-in Maccay providers and is rejected by `validate()`. |
+| `engine` | string | yes | `"declarative"` or `"javascript"`. Never `"native"` — that value is reserved for built-in MaccyPlus providers and is rejected by `validate()`. |
 | `declarative` | object | if engine is `"declarative"` | Transform op list (actions) or predicate tree (conditions). See [declarative-plugins.md](./declarative-plugins.md). |
 | `entry` | string | if engine is `"javascript"` | Filename of the JS script relative to the plugin folder, e.g. `"main.js"`. Must be non-empty. |
 | `function` | string | no | Named JS function to call. Defaults to `"transform"` for actions, `"matches"` for conditions. Multiple providers in the same package can share one `entry` file by specifying different `function` values. |

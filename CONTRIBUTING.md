@@ -1,6 +1,6 @@
 # Contributing to maccay-plugins
 
-This repository is the official Maccay plugin marketplace. All plugins listed in `marketplace.json` are reviewed by the maintainer and satisfy the requirements below before merge.
+This repository is the official MaccyPlus plugin marketplace. All plugins listed in `marketplace.json` are reviewed by the maintainer and satisfy the requirements below before merge.
 
 ---
 
@@ -32,7 +32,7 @@ Every package manifest must include these top-level fields:
 | `providers` | yes | Non-empty array of provider objects (see below). |
 | `author` | no | Object with `name` and optional `url`. |
 | `longHelp` | no | Extended description shown in the plugin detail view. |
-| `minAppVersion` | no | Minimum Maccay version required, e.g. `"2.7.0"`. |
+| `minAppVersion` | no | Minimum MaccyPlus version required, e.g. `"2.7.0"`. |
 
 Each entry in `providers` must include:
 
@@ -113,7 +113,7 @@ Copy the first field of the output. The CI script recomputes this hash and fails
 - JavaScript providers must include a non-empty `entry` filename, and the referenced file must exist in the plugin folder.
 - The `sha256` in `marketplace.json` must match the SHA-256 of the committed `plugin.json`.
 - No obfuscated JavaScript.
-- No `engine: "native"` (reserved for built-in Maccay providers).
+- No `engine: "native"` (reserved for built-in MaccyPlus providers).
 - No undeclared network or filesystem access.
 
 > **Note on capabilities in v1:** Capabilities are declared, displayed to the user during install, and badged in the UI — but the bridge-less JS sandbox does not yet enforce them at runtime. Plugins that declare capabilities dishonestly will be removed and the author blocked. The enforcement bridge is planned for a future version.
@@ -122,7 +122,7 @@ Copy the first field of the output. The CI script recomputes this hash and fails
 
 ## What is NOT allowed
 
-- `engine: "native"` — only the Maccay app itself may register native providers.
+- `engine: "native"` — only the MaccyPlus app itself may register native providers.
 - Undeclared network or filesystem access.
 - Plugins that exfiltrate clipboard content to external servers.
 - Obfuscated JavaScript.

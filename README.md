@@ -1,6 +1,6 @@
 # maccay-plugins
 
-The official plugin marketplace for [Maccay](https://github.com/roypadina/Maccay), a macOS clipboard manager.
+The official plugin marketplace for [MaccyPlus](https://github.com/roypadina/maccyplus), a macOS clipboard manager.
 
 Browse the [`plugins/`](./plugins/) directory to see what's available, or jump straight to [Building your first plugin](#quickstart-build-your-first-plugin).
 
@@ -26,17 +26,19 @@ Each provider is implemented with one of two engines:
 
 ### From the marketplace (recommended)
 
-1. Open **Maccay → Settings → Plugins**.
-2. Click **Add Marketplace** and paste the URL:
-   ```
-   https://raw.githubusercontent.com/roypadina/maccay-plugins/main/marketplace.json
-   ```
-3. Browse and install plugins.
+1. Open **MaccyPlus → Settings → Plugins**.
+2. The official marketplace (**MaccyPlus Official Plugins**) is **pre-loaded** — under **Available**, click **Install** on any plugin.
+
+To add a *third-party* marketplace, click **Add marketplace…** and paste its `marketplace.json` URL. The official index is:
+
+```
+https://raw.githubusercontent.com/roypadina/maccay-plugins/main/marketplace.json
+```
 
 ### Local folder (during development)
 
-1. Open **Maccay → Settings → Plugins**.
-2. Click **Add Local Folder** and point it at a folder that contains `plugin.json`.
+1. Open **MaccyPlus → Settings → Plugins**.
+2. Under **Local folders (dev)**, click **Add folder…** and point it at a folder containing a `plugin.json`.
 
 ---
 
@@ -70,7 +72,7 @@ Create `plugins/my-trim/plugin.json`:
 }
 ```
 
-That's it. Point Maccay at the folder and the action appears immediately.
+That's it. Point MaccyPlus at the folder and the action appears immediately.
 
 ### JavaScript action
 

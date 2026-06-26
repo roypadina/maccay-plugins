@@ -13,7 +13,7 @@ Related docs: [authoring.md](./authoring.md) · [CONTRIBUTING.md](../CONTRIBUTIN
 | Field | Type | Required | Notes |
 |---|---|---|---|
 | `id` | string | yes | Identifier for this marketplace, e.g. `"maccay-official"`. |
-| `name` | string | yes | Display name, e.g. `"Maccay Official Plugins"`. |
+| `name` | string | yes | Display name, e.g. `"MaccyPlus Official Plugins"`. |
 | `version` | string | yes | Marketplace index version. Bump when you add or update plugins. |
 | `description` | string | no | Short description of the marketplace. |
 | `maintainer` | string | no | GitHub username or display name of the maintainer. |
@@ -29,7 +29,7 @@ Each element of `plugins`:
 | `name` | string | yes | Display name shown in the browse list. |
 | `description` | string | yes | Short description. 120 chars max (validated by CI). |
 | `version` | string | yes | Must match the `version` in `plugin.json`. |
-| `minAppVersion` | string | no | Minimum Maccay version required. |
+| `minAppVersion` | string | no | Minimum MaccyPlus version required. |
 | `kind` | string | yes | `"action"` or `"condition"`. Primary kind of the package. |
 | `tags` | array of strings | no | Freeform tags for filtering, e.g. `["transform", "text"]`. |
 | `capabilities` | array of strings | no | Same values as in `plugin.json`: `"network"`, `"fileRead"`, `"fileWrite"`, `"storage"`. |
@@ -106,12 +106,12 @@ The CI script (`scripts/validate.py`) recomputes this hash for every entry and f
 
 ## Local-folder development loop
 
-You do not need to publish to iterate. Point Maccay at your local folder:
+You do not need to publish to iterate. Point MaccyPlus at your local folder:
 
 1. Create your plugin folder anywhere on disk (e.g. `~/dev/my-plugin/`).
-2. In Maccay → Settings → Plugins, click **Add Local Folder** and select the folder.
+2. In MaccyPlus → Settings → Plugins, click **Add Local Folder** and select the folder.
 3. Edit `plugin.json` (and `main.js`) in your editor.
-4. Click **Reload** in Maccay to pick up changes.
+4. Click **Reload** in MaccyPlus to pick up changes.
 
 Local plugins are not verified with a sha256 — verification only applies to marketplace installs.
 
@@ -122,9 +122,9 @@ Local plugins are not verified with a sha256 — verification only applies to ma
 ```json
 {
   "id": "maccay-official",
-  "name": "Maccay Official Plugins",
+  "name": "MaccyPlus Official Plugins",
   "version": "1",
-  "description": "First-party Maccay clipboard plugins.",
+  "description": "First-party MaccyPlus clipboard plugins.",
   "maintainer": "roypadina",
   "plugins": [
     {
