@@ -1,6 +1,6 @@
 # Plugin submission checklist
 
-Thank you for contributing to maccay-plugins! Please confirm each item before requesting review.
+Thank you for contributing to MaccyPlus-Plugins! Please confirm each item before requesting review.
 
 ## Plugin manifest
 

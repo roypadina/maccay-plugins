@@ -1,4 +1,4 @@
-# maccay-plugins
+# MaccyPlus-Plugins
 
 The official plugin marketplace for [MaccyPlus](https://github.com/roypadina/maccyplus), a macOS clipboard manager.
 
@@ -32,7 +32,7 @@ Each provider is implemented with one of two engines:
 To add a *third-party* marketplace, click **Add marketplace…** and paste its `marketplace.json` URL. The official index is:
 
 ```
-https://raw.githubusercontent.com/roypadina/maccay-plugins/main/marketplace.json
+https://raw.githubusercontent.com/roypadina/MaccyPlus-Plugins/main/marketplace.json
 ```
 
 ### Local folder (during development)

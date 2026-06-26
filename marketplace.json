@@ -1,12 +1,12 @@
 {
-  "id": "maccay-official",
-  "name": "Maccay Official Plugins",
+  "id": "maccyplus-official",
+  "name": "MaccyPlus Official Plugins",
   "version": "1",
-  "description": "First-party Maccay clipboard plugins.",
+  "description": "First-party MaccyPlus clipboard plugins.",
   "maintainer": "roypadina",
   "plugins": [
     {
-      "id": "com.maccay.example-has-url",
+      "id": "com.maccyplus.example-has-url",
       "name": "Has URL",
       "description": "True when the clipboard text contains an http or https URL.",
       "version": "1.0.0",
@@ -14,14 +14,14 @@
       "capabilities": [],
       "source": {
         "type": "github",
-        "repo": "roypadina/maccay-plugins",
+        "repo": "roypadina/MaccyPlus-Plugins",
         "ref": "main",
         "path": "plugins/example-has-url"
       },
-      "sha256": "3ad0327db2db23423c8cb9b24d65dcd227bd20d187d7ba68fac4b1f4934266d5"
+      "sha256": "4c558a1c2ca97dead51fe4da9b7cddceb0dcf6ade03e7053e91823da09976a25"
     },
     {
-      "id": "com.maccay.example-shout",
+      "id": "com.maccyplus.example-shout",
       "name": "Shout",
       "description": "Uppercases the clipboard text and prepends SHOUT:.",
       "version": "1.0.0",
@@ -29,14 +29,14 @@
       "capabilities": [],
       "source": {
         "type": "github",
-        "repo": "roypadina/maccay-plugins",
+        "repo": "roypadina/MaccyPlus-Plugins",
         "ref": "main",
         "path": "plugins/example-shout"
       },
-      "sha256": "dc5518605c763e44774f8b6da089589f6e044506c0a1d52ccdf42d6a8a8c0b81"
+      "sha256": "424efc938e1dd9c59edefaeb78e5989c319e3494e77b1eb5a8e1f5f0aac332f5"
     },
     {
-      "id": "com.maccay.text-transforms",
+      "id": "com.maccyplus.text-transforms",
       "name": "Text transforms",
       "description": "Everyday clipboard text transforms: trim, UPPERCASE, lowercase, strip formatting, and fix keyboard layout.",
       "version": "1.0.0",
@@ -44,14 +44,14 @@
       "capabilities": [],
       "source": {
         "type": "github",
-        "repo": "roypadina/maccay-plugins",
+        "repo": "roypadina/MaccyPlus-Plugins",
         "ref": "main",
         "path": "plugins/text-transforms"
       },
-      "sha256": "ebb471bfc61370ff02e93a50dad4b672cd6f4e6ba0e58d75ba13123ad9863b67"
+      "sha256": "de7bb3043681903b25f908b0650fb55749081cddd88e1d63a62e5810f8160538"
     },
     {
-      "id": "com.maccay.unwrap-terminal",
+      "id": "com.maccyplus.unwrap-terminal",
       "name": "Unwrap terminal command",
       "description": "Detects terminal-copied, soft-wrapped text and joins it back into one line.",
       "version": "1.0.0",
@@ -59,11 +59,11 @@
       "capabilities": [],
       "source": {
         "type": "github",
-        "repo": "roypadina/maccay-plugins",
+        "repo": "roypadina/MaccyPlus-Plugins",
         "ref": "main",
         "path": "plugins/unwrap-terminal"
       },
-      "sha256": "21ebf1ee6c93b587e3839fd4b13722f888c4637fc5fdaa832f1dd7a1c52c4c16"
+      "sha256": "c113f02aac835d98aad4c897660614e0e307a90ce27287fbe84e13867b2295a9"
     }
   ]
 }

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Maccay plugin marketplace validator.
+MaccyPlus plugin marketplace validator.
 
 Validates every plugins/*/plugin.json manifest and verifies that every entry
 in marketplace.json has a sha256 that matches the committed plugin.json.

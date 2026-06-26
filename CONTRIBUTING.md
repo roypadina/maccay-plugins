@@ -1,4 +1,4 @@
-# Contributing to maccay-plugins
+# Contributing to MaccyPlus-Plugins
 
 This repository is the official MaccyPlus plugin marketplace. All plugins listed in `marketplace.json` are reviewed by the maintainer and satisfy the requirements below before merge.
 
@@ -66,7 +66,7 @@ Add one object to the `plugins` array in `marketplace.json`:
   "capabilities": [],
   "source": {
     "type": "github",
-    "repo": "roypadina/maccay-plugins",
+    "repo": "roypadina/MaccyPlus-Plugins",
     "ref": "main",
     "path": "plugins/com.yourname.myplugin"
   },

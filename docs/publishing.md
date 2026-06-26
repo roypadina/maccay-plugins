@@ -12,7 +12,7 @@ Related docs: [authoring.md](./authoring.md) · [CONTRIBUTING.md](../CONTRIBUTIN
 
 | Field | Type | Required | Notes |
 |---|---|---|---|
-| `id` | string | yes | Identifier for this marketplace, e.g. `"maccay-official"`. |
+| `id` | string | yes | Identifier for this marketplace, e.g. `"maccyplus-official"`. |
 | `name` | string | yes | Display name, e.g. `"MaccyPlus Official Plugins"`. |
 | `version` | string | yes | Marketplace index version. Bump when you add or update plugins. |
 | `description` | string | no | Short description of the marketplace. |
@@ -45,7 +45,7 @@ Two source types are supported. Use `"type"` as the discriminator:
 ```json
 {
   "type": "github",
-  "repo": "roypadina/maccay-plugins",
+  "repo": "roypadina/MaccyPlus-Plugins",
   "ref": "main",
   "path": "plugins/com.yourname.myplugin"
 }
@@ -98,7 +98,7 @@ The CI script (`scripts/validate.py`) recomputes this hash for every entry and f
    - Fetches `plugin.json` from the source URL.
    - Computes SHA-256 of the downloaded bytes.
    - Compares against the `sha256` in `marketplace.json`. Aborts on mismatch.
-3. The app writes the verified `plugin.json` to `~/.maccay/plugins/<entry.id>/plugin.json`.
+3. The app writes the verified `plugin.json` to `~/.maccyplus/plugins/<entry.id>/plugin.json`.
 4. For each distinct `entry` filename declared by JavaScript providers, the app fetches and writes the corresponding JS file alongside `plugin.json`.
 5. No zip extraction — the install is always a flat directory of small files.
 
@@ -121,7 +121,7 @@ Local plugins are not verified with a sha256 — verification only applies to ma
 
 ```json
 {
-  "id": "maccay-official",
+  "id": "maccyplus-official",
   "name": "MaccyPlus Official Plugins",
   "version": "1",
   "description": "First-party MaccyPlus clipboard plugins.",
@@ -138,7 +138,7 @@ Local plugins are not verified with a sha256 — verification only applies to ma
       "capabilities": [],
       "source": {
         "type": "github",
-        "repo": "roypadina/maccay-plugins",
+        "repo": "roypadina/MaccyPlus-Plugins",
         "ref": "main",
         "path": "plugins/com.yourname.myplugin"
       },

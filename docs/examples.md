@@ -18,7 +18,7 @@ This is the simplest possible JavaScript condition. The package has one provider
 `plugin.json`:
 ```json
 {
-  "id": "com.maccay.example-has-url",
+  "id": "com.maccyplus.example-has-url",
   "name": "Has URL",
   "version": "1.0.0",
   "author": { "name": "MaccyPlus" },
@@ -26,7 +26,7 @@ This is the simplest possible JavaScript condition. The package has one provider
   "capabilities": [],
   "providers": [
     {
-      "id": "com.maccay.example.has-url",
+      "id": "com.maccyplus.example.has-url",
       "name": "Has URL",
       "description": "True when the clipboard text contains an http or https URL.",
       "kind": "condition",
@@ -56,7 +56,7 @@ The simplest declarative action. Uppercases the text and prepends `"SHOUT: "`.
 
 ```json
 {
-  "id": "com.maccay.example-shout",
+  "id": "com.maccyplus.example-shout",
   "name": "Shout",
   "version": "1.0.0",
   "author": { "name": "MaccyPlus" },
@@ -64,7 +64,7 @@ The simplest declarative action. Uppercases the text and prepends `"SHOUT: "`.
   "capabilities": [],
   "providers": [
     {
-      "id": "com.maccay.example.shout",
+      "id": "com.maccyplus.example.shout",
       "name": "Shout",
       "description": "Uppercases the clipboard text and prepends SHOUT:.",
       "kind": "action",
@@ -109,7 +109,7 @@ The fifth provider (`fix-keyboard-layout`) uses JavaScript because the EN ⇄ HE
 
 ```json
 {
-  "id": "com.maccay.fix-keyboard-layout",
+  "id": "com.maccyplus.fix-keyboard-layout",
   "name": "Fix keyboard layout (EN ⇄ HE)",
   "description": "Corrects text typed in the wrong layout by re-mapping between US-QWERTY and Israeli SI-1452. Direction auto-detected.",
   "kind": "action",
@@ -142,7 +142,7 @@ The three providers:
 
 ```json
 {
-  "id": "com.maccay.terminal-source",
+  "id": "com.maccyplus.terminal-source",
   "kind": "condition",
   "engine": "declarative",
   "declarative": {
@@ -168,7 +168,7 @@ Uses the `any` logical node with `sourceApp` leaves to match a list of known ter
 
 ```json
 {
-  "id": "com.maccay.soft-wrap",
+  "id": "com.maccyplus.soft-wrap",
   "kind": "condition",
   "engine": "javascript",
   "entry": "main.js",
@@ -182,7 +182,7 @@ The heuristic — every line except the last has the same length ≥ 40 — requ
 
 ```json
 {
-  "id": "com.maccay.unwrap",
+  "id": "com.maccyplus.unwrap",
   "kind": "action",
   "engine": "javascript",
   "entry": "main.js",
